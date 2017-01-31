@@ -1,5 +1,5 @@
 # Batman Bot
-A twitter bot made in node js :heart: . The [bot](www.twitter.com/_i_Batman_i_) continuosly likes and
+A twitter bot made in node js :heart: . The [bot](https://www.twitter.com/_i_Batman_i_) continuosly likes and
 favorites random recent tweets featuring `#Batman` every 60 minutes.   
 It uses Heroku for server side deployment.   
 Can be installed by using npm [package](https://www.npmjs.com/package/batmanbot) manager or by cloning this repo   
