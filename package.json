@@ -1,0 +1,21 @@
+{
+  "name": "BatmanBot",
+  "version": "0.0.0",
+  "description": "Batman Bot ",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vedipen/BatmanBot.git"
+  },
+  "keywords": [
+    "TwitterBot"
+  ],
+  "author": "vedipen",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/vedipen/BatmanBot/issues"
+  }
+}
