@@ -10,13 +10,13 @@ var Twitter = new twit(config);
 // find latest tweet according the query 'q' in params
 var retweet = function() {
     var params = {
-        q: '#BatmanSays, #batmansays',  // REQUIRED
+        q: '#Batman, #batman',  // REQUIRED
         result_type: 'recent',
         lang: 'en'
-    }
+    };;
     Twitter.get('search/tweets', params, function(err, data) {
       // if there no errors
-        if (!err) {
+        if (!err && data && data.statuses[0]) {
           // grab ID of tweet to retweet
             var retweetId = data.statuses[0].id_str;
             // Tell TWITTER to retweet
@@ -37,7 +37,7 @@ var retweet = function() {
           console.log('Something went wrong while SEARCHING...');
         }
     });
-}
+};
 
 // grab & retweet as soon as program is running...
 retweet();
@@ -49,10 +49,10 @@ setInterval(retweet, 3000000);
 // find a random tweet and 'favorite' it
 var favoriteTweet = function(){
   var params = {
-      q: '#BatmanSays, #batmansays',  // REQUIRED
+      q: '#Batman, #batman',  // REQUIRED
       result_type: 'recent',
       lang: 'en'
-  }
+  };;
   // find the tweet
   Twitter.get('search/tweets', params, function(err,data){
 
@@ -74,7 +74,7 @@ var favoriteTweet = function(){
       });
     }
   });
-}
+};;
 // grab & 'favorite' as soon as program is running...
 favoriteTweet();
 // 'favorite' a tweet in every 60 minutes
